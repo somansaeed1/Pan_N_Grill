@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Pan N Grill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     Navigation 
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Pan N Grill</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+     Gallery Header 
+    <section class="gallery-header">
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Take a visual journey through our restaurant, dishes, and dining experience</p>
+        </div>
+    </section>
+
+     Gallery Grid 
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="gallery-items">
+                <div class="gallery-item" onclick="openLightbox('public/elegant-restaurant-interior-with-warm-lighting-and.jpg')">
+                    <img src="public/elegant-restaurant-interior-with-warm-lighting-and.jpg" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <span>Restaurant Interior</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('public/delicious-chicken-shawarma-wrap-with-vegetables-an.jpg')">
+                    <img src="public/delicious-chicken-shawarma-wrap-with-vegetables-an.jpg" alt="Chicken Shawarma">
+                    <div class="gallery-overlay">
+                        <span>Chicken Shawarma</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('public/gourmet-burger-with-beef-patty-and-fresh-toppings.jpg')">
+                    <img src="public/gourmet-burger-with-beef-patty-and-fresh-toppings.jpg" alt="Gourmet Burger">
+                    <div class="gallery-overlay">
+                        <span>Gourmet Burger</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('public/restaurant-exterior-night.jpg')">
+                    <img src="public/restaurant-exterior-night.jpg" alt="Restaurant Exterior">
+                    <div class="gallery-overlay">
+                        <span>Restaurant Exterior</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('public/chef-preparing-food.jpg')">
+                    <img src="public/chef-preparing-food.jpg" alt="Chef Preparing Food">
+                    <div class="gallery-overlay">
+                        <span>Chef at Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox('public/dining-table-setup.jpg')">
+                    <img src="public/dining-table-setup.jpg" alt="Dining Table Setup">
+                    <div class="gallery-overlay">
+                        <span>Dining Setup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Lightbox 
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" class="lightbox-content" alt="">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

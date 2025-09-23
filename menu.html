@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Pan N Grill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     Navigation 
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Pan N Grill</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+     Menu Header 
+    <section class="menu-header">
+        <div class="container">
+            <div class="menu-title">
+                <h1>Our Menu</h1>
+                <button id="cart-btn" class="cart-button">
+                    View Cart (<span id="cart-count">0</span>)
+                </button>
+            </div>
+            <p>Discover our delicious selection of shawarmas, burgers, pizza, pasta, and more. All made fresh with the finest ingredients.</p>
+        </div>
+    </section>
+
+     Menu Items 
+    <section class="menu-items">
+        <div class="container">
+            <!-- Special Pizza -->
+            <div class="menu-category">
+                <h2>Special Pizza</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="1" data-name="Family Pizza" data-price="2000">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Family Pizza">
+                        <div class="item-info">
+                            <h3>Family Pizza</h3>
+                            <p>Large family-sized pizza perfect for sharing</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 2000</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="2" data-name="X-Large Pizza" data-price="2750">
+                        <img src="/placeholder.svg?height=200&width=300" alt="X-Large Pizza">
+                        <div class="item-info">
+                            <h3>X-Large Pizza</h3>
+                            <p>Extra large pizza for big appetites</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 2750</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="3" data-name="Royal Kabab Crust" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Royal Kabab Crust">
+                        <div class="item-info">
+                            <h3>Royal Kabab Crust</h3>
+                            <p>Special kabab crust pizza with authentic flavors</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="4" data-name="Pan Pizza Crust Special" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pan Pizza Crust Special">
+                        <div class="item-info">
+                            <h3>Pan Pizza Crust Special</h3>
+                            <p>Our signature pan pizza with special crust</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="5" data-name="Kabab Crust Pizza" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Kabab Crust Pizza">
+                        <div class="item-info">
+                            <h3>Kabab Crust Pizza</h3>
+                            <p>Delicious kabab crust with special toppings</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="6" data-name="Cheese Lovers Pizza" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cheese Lovers Pizza">
+                        <div class="item-info">
+                            <h3>Cheese Lovers Pizza</h3>
+                            <p>Extra cheese pizza for cheese enthusiasts</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="7" data-name="Chicken Tikka Pizza" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chicken Tikka Pizza">
+                        <div class="item-info">
+                            <h3>Chicken Tikka Pizza</h3>
+                            <p>Delicious chicken tikka with special spices</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="8" data-name="Chicken Fajita Pizza" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chicken Fajita Pizza">
+                        <div class="item-info">
+                            <h3>Chicken Fajita Pizza</h3>
+                            <p>Spicy chicken fajita with bell peppers</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="9" data-name="Afghani Pizza" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Afghani Pizza">
+                        <div class="item-info">
+                            <h3>Afghani Pizza</h3>
+                            <p>Traditional Afghani flavors on pizza</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="10" data-name="Kababa Stuff Pizza" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Kababa Stuff Pizza">
+                        <div class="item-info">
+                            <h3>Kababa Stuff Pizza</h3>
+                            <p>Pizza stuffed with delicious kabab</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600/1100/1650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Regular Pizza -->
+            <div class="menu-category">
+                <h2>Regular Pizza</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="11" data-name="Tikka Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Tikka Pizza">
+                        <div class="item-info">
+                            <h3>Tikka Pizza</h3>
+                            <p>Classic tikka pizza with traditional flavors</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="12" data-name="Fajita Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Fajita Pizza">
+                        <div class="item-info">
+                            <h3>Fajita Pizza</h3>
+                            <p>Spicy fajita pizza with fresh vegetables</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="13" data-name="Supreme Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Supreme Pizza">
+                        <div class="item-info">
+                            <h3>Supreme Pizza</h3>
+                            <p>Loaded with multiple toppings and cheese</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="14" data-name="Bar B-Q Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Bar B-Q Pizza">
+                        <div class="item-info">
+                            <h3>Bar B-Q Pizza</h3>
+                            <p>Smoky barbecue flavored pizza</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="15" data-name="Achari Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Achari Pizza">
+                        <div class="item-info">
+                            <h3>Achari Pizza</h3>
+                            <p>Tangy achari flavored pizza</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="16" data-name="Italian Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Italian Pizza">
+                        <div class="item-info">
+                            <h3>Italian Pizza</h3>
+                            <p>Authentic Italian style pizza</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="17" data-name="Multi Flavour Pizza" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Multi Flavour Pizza">
+                        <div class="item-info">
+                            <h3>Multi Flavour Pizza</h3>
+                            <p>Pizza with multiple delicious flavors</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500/1000/1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Shawarmas -->
+            <div class="menu-category">
+                <h2>Special Shawarmas</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="18" data-name="Chicken Shawarma" data-price="200">
+                        <img src="public/delicious-chicken-shawarma-wrap-with-vegetables-an.jpg" alt="Chicken Shawarma">
+                        <div class="item-info">
+                            <h3>Chicken Shawarma</h3>
+                            <p>Tender marinated chicken wrapped in fresh pita</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 200</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="19" data-name="Achari Shawarma" data-price="200">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Achari Shawarma">
+                        <div class="item-info">
+                            <h3>Achari Shawarma</h3>
+                            <p>Tangy achari flavored chicken shawarma</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 200</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="20" data-name="Malai Roll Shawarma" data-price="250">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Malai Roll Shawarma">
+                        <div class="item-info">
+                            <h3>Malai Roll Shawarma</h3>
+                            <p>Creamy malai chicken in soft roll</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 250</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="21" data-name="Zinger Shawarma" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Zinger Shawarma">
+                        <div class="item-info">
+                            <h3>Zinger Shawarma</h3>
+                            <p>Spicy zinger chicken with special sauce</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="22" data-name="Special Shawarma" data-price="250">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Special Shawarma">
+                        <div class="item-info">
+                            <h3>Special Shawarma</h3>
+                            <p>Our signature shawarma with unique blend of spices</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 250</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="23" data-name="Grilled Shawarma" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Grilled Shawarma">
+                        <div class="item-info">
+                            <h3>Grilled Shawarma</h3>
+                            <p>Perfectly grilled chicken shawarma</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="24" data-name="Qe Cheese Roll" data-price="250">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Qe Cheese Roll">
+                        <div class="item-info">
+                            <h3>Qe Cheese Roll</h3>
+                            <p>Cheesy chicken roll with special sauce</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 250</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="25" data-name="Nugget Roll Shawarma" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Nugget Roll Shawarma">
+                        <div class="item-info">
+                            <h3>Nugget Roll Shawarma</h3>
+                            <p>Crispy nuggets wrapped in soft roll</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="26" data-name="Platter Shawarma" data-price="350">
+                        <img src="public/mixed-shawarma-platter.jpg" alt="Platter Shawarma">
+                        <div class="item-info">
+                            <h3>Platter Shawarma</h3>
+                            <p>Complete shawarma platter with sides</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="27" data-name="Slice Cheese" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Slice Cheese">
+                        <div class="item-info">
+                            <h3>Slice Cheese</h3>
+                            <p>Shawarma with melted cheese slices</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pratha Roll -->
+            <div class="menu-category">
+                <h2>Pratha Roll</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="28" data-name="Chicken Pratha Roll" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chicken Pratha Roll">
+                        <div class="item-info">
+                            <h3>Chicken Pratha Roll</h3>
+                            <p>Tender chicken wrapped in fresh paratha</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="29" data-name="Zinger Pratha Roll" data-price="400">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Zinger Pratha Roll">
+                        <div class="item-info">
+                            <h3>Zinger Pratha Roll</h3>
+                            <p>Spicy zinger chicken in paratha roll</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 400</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="30" data-name="Afghani Pratha Roll" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Afghani Pratha Roll">
+                        <div class="item-info">
+                            <h3>Afghani Pratha Roll</h3>
+                            <p>Afghani style chicken in paratha</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="31" data-name="Nugget Pratha Roll" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Nugget Pratha Roll">
+                        <div class="item-info">
+                            <h3>Nugget Pratha Roll</h3>
+                            <p>Crispy nuggets in soft paratha roll</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="32" data-name="Patty Pratha Roll" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Patty Pratha Roll">
+                        <div class="item-info">
+                            <h3>Patty Pratha Roll</h3>
+                            <p>Chicken patty wrapped in paratha</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="33" data-name="Grill Pratha Roll" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Grill Pratha Roll">
+                        <div class="item-info">
+                            <h3>Grill Pratha Roll</h3>
+                            <p>Grilled chicken in fresh paratha</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chorizo Burgers -->
+            <div class="menu-category">
+                <h2>Chorizo Burgers</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="34" data-name="Modern Burger" data-price="450">
+                        <img src="public/gourmet-burger-with-beef-patty-and-fresh-toppings.jpg" alt="Modern Burger">
+                        <div class="item-info">
+                            <h3>Modern Burger</h3>
+                            <p>Contemporary style burger with premium ingredients</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 450</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="35" data-name="Zinger Burger" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Zinger Burger">
+                        <div class="item-info">
+                            <h3>Zinger Burger</h3>
+                            <p>Spicy zinger chicken burger with crispy coating</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="36" data-name="Chicken Patty Burger" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chicken Patty Burger">
+                        <div class="item-info">
+                            <h3>Chicken Patty Burger</h3>
+                            <p>Classic chicken patty burger</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="37" data-name="Chapli Burger" data-price="250">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chapli Burger">
+                        <div class="item-info">
+                            <h3>Chapli Burger</h3>
+                            <p>Traditional chapli kabab burger</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 250</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="38" data-name="Sp. Kabab Burger" data-price="400">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Sp. Kabab Burger">
+                        <div class="item-info">
+                            <h3>Sp. Kabab Burger</h3>
+                            <p>Special kabab burger with unique flavors</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 400</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="39" data-name="Grill Burger" data-price="320">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Grill Burger">
+                        <div class="item-info">
+                            <h3>Grill Burger</h3>
+                            <p>Perfectly grilled chicken burger</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 320</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="40" data-name="Tower Burger" data-price="450">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Tower Burger">
+                        <div class="item-info">
+                            <h3>Tower Burger</h3>
+                            <p>Multi-layered tower burger with double patty</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 450</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="41" data-name="Jelo Pino Burger" data-price="380">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Jelo Pino Burger">
+                        <div class="item-info">
+                            <h3>Jelo Pino Burger</h3>
+                            <p>Spicy jalapeño burger with special sauce</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 380</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="42" data-name="Double Decker Cheese Burger" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Double Decker Cheese Burger">
+                        <div class="item-info">
+                            <h3>Double Decker Cheese Burger</h3>
+                            <p>Double patty burger loaded with cheese</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fried Items -->
+            <div class="menu-category">
+                <h2>Fried Items</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="43" data-name="Bake Oven Broast" data-price="1600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Bake Oven Broast">
+                        <div class="item-info">
+                            <h3>Bake Oven Broast</h3>
+                            <p>Oven baked broast chicken, crispy and delicious</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1600</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="44" data-name="Full Broast" data-price="1600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Full Broast">
+                        <div class="item-info">
+                            <h3>Full Broast</h3>
+                            <p>Complete broast chicken, crispy and delicious</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1600</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="45" data-name="Half Broast" data-price="800">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Half Broast">
+                        <div class="item-info">
+                            <h3>Half Broast</h3>
+                            <p>Half broast chicken, perfect for sharing</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 800</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="46" data-name="Quarter Broast (2p)" data-price="400">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Quarter Broast">
+                        <div class="item-info">
+                            <h3>Quarter Broast (2p)</h3>
+                            <p>Quarter broast chicken, 2 pieces</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 400</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="47" data-name="Hot Wings (10p)" data-price="700">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hot Wings">
+                        <div class="item-info">
+                            <h3>Hot Wings (10p)</h3>
+                            <p>Spicy hot wings, 10 pieces</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 700</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="48" data-name="Hot Wings (5p)" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hot Wings 5p">
+                        <div class="item-info">
+                            <h3>Hot Wings (5p)</h3>
+                            <p>Spicy hot wings, 5 pieces</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="49" data-name="Nuggets (10p)" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Nuggets 10p">
+                        <div class="item-info">
+                            <h3>Nuggets (10p)</h3>
+                            <p>Crispy chicken nuggets, 10 pieces</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="50" data-name="Nuggets (5p)" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Nuggets 5p">
+                        <div class="item-info">
+                            <h3>Nuggets (5p)</h3>
+                            <p>Crispy chicken nuggets, 5 pieces</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pan N Grill Special -->
+            <div class="menu-category">
+                <h2>Pan N Grill Special</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="51" data-name="Pan & Grill Sp. Platter" data-price="650">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pan & Grill Special Platter">
+                        <div class="item-info">
+                            <h3>Pan & Grill Sp. Platter</h3>
+                            <p>Our signature special platter with variety</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="52" data-name="Pizza Sandwich" data-price="550">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pizza Sandwich">
+                        <div class="item-info">
+                            <h3>Pizza Sandwich</h3>
+                            <p>Unique pizza flavored sandwich</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 550</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="53" data-name="Pizza Paratha" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pizza Paratha">
+                        <div class="item-info">
+                            <h3>Pizza Paratha</h3>
+                            <p>Pizza flavors in traditional paratha</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="54" data-name="Cheesy Spring Roll (4p)" data-price="1800">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cheesy Spring Roll">
+                        <div class="item-info">
+                            <h3>Cheesy Spring Roll (4p)</h3>
+                            <p>Crispy spring rolls filled with cheese, 4 pieces</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1800</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="55" data-name="Ch. Cheese Garlic Bread" data-price="500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chicken Cheese Garlic Bread">
+                        <div class="item-info">
+                            <h3>Ch. Cheese Garlic Bread</h3>
+                            <p>Chicken and cheese garlic bread</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rice -->
+            <div class="menu-category">
+                <h2>Rice</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="56" data-name="Chicken Fried Rice" data-price="400">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chicken Fried Rice">
+                        <div class="item-info">
+                            <h3>Chicken Fried Rice</h3>
+                            <p>Delicious chicken fried rice with vegetables</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 400/800</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="57" data-name="Egg Fried Rice" data-price="350">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Egg Fried Rice">
+                        <div class="item-info">
+                            <h3>Egg Fried Rice</h3>
+                            <p>Classic egg fried rice with fresh vegetables</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 350/700</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pasta -->
+            <div class="menu-category">
+                <h2>Pasta</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="58" data-name="Malai Botti Pasta" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Malai Botti Pasta">
+                        <div class="item-info">
+                            <h3>Malai Botti Pasta</h3>
+                            <p>Creamy pasta with tender malai botti</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="59" data-name="Crunchy Pasta" data-price="750">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Crunchy Pasta">
+                        <div class="item-info">
+                            <h3>Crunchy Pasta</h3>
+                            <p>Pasta with crunchy toppings and special sauce</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 750</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="60" data-name="Creamy & Cheesy Pasta" data-price="700">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Creamy & Cheesy Pasta">
+                        <div class="item-info">
+                            <h3>Creamy & Cheesy Pasta</h3>
+                            <p>Rich and creamy pasta loaded with cheese</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 700</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="61" data-name="Tandori Pasta" data-price="700">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Tandori Pasta">
+                        <div class="item-info">
+                            <h3>Tandori Pasta</h3>
+                            <p>Pasta with tandoori flavored chicken</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 700</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="62" data-name="Hot & Spicy Pasta" data-price="650">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hot & Spicy Pasta">
+                        <div class="item-info">
+                            <h3>Hot & Spicy Pasta</h3>
+                            <p>Spicy pasta with hot sauce and peppers</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 650</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fries Items -->
+            <div class="menu-category">
+                <h2>Fries Items</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="63" data-name="Oppo Fries" data-price="150">
+                        <img src="public/golden-crispy-french-fries.png" alt="Oppo Fries">
+                        <div class="item-info">
+                            <h3>Oppo Fries</h3>
+                            <p>Small portion of crispy fries</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 150</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="64" data-name="Large Fries" data-price="250">
+                        <img src="public/loaded-fries.png" alt="Large Fries">
+                        <div class="item-info">
+                            <h3>Large Fries</h3>
+                            <p>Large portion of golden crispy fries</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 250</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="65" data-name="Family Fries" data-price="300">
+                        <img src="public/sweet-potato-fries-with-cinnamon.jpg" alt="Family Fries">
+                        <div class="item-info">
+                            <h3>Family Fries</h3>
+                            <p>Family-sized portion perfect for sharing</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deals -->
+            <div class="menu-category">
+                <h2>Special Deals</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="66" data-name="2X-Large Pizza Deal" data-price="3200">
+                        <img src="/placeholder.svg?height=200&width=300" alt="2X-Large Pizza Deal">
+                        <div class="item-info">
+                            <h3>2X-Large Pizza Deal</h3>
+                            <p>2 X-Large Pizza + 1.5L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 3200</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="67" data-name="2Large Pizza Deal" data-price="2700">
+                        <img src="/placeholder.svg?height=200&width=300" alt="2Large Pizza Deal">
+                        <div class="item-info">
+                            <h3>2Large Pizza Deal</h3>
+                            <p>2 Large Pizza + 1.5L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 2700</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="68" data-name="2 Medium Pizza Deal" data-price="1800">
+                        <img src="/placeholder.svg?height=200&width=300" alt="2 Medium Pizza Deal">
+                        <div class="item-info">
+                            <h3>2 Medium Pizza Deal</h3>
+                            <p>2 Medium Pizza + 1.5L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1800</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="69" data-name="3 Small Pizza Deal" data-price="1500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="3 Small Pizza Deal">
+                        <div class="item-info">
+                            <h3>3 Small Pizza Deal</h3>
+                            <p>3 Small Pizza + 1.5L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="70" data-name="5 Zinger Burger Deal" data-price="1600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="5 Zinger Burger Deal">
+                        <div class="item-info">
+                            <h3>5 Zinger Burger Deal</h3>
+                            <p>5 Zinger Burger + 1.5L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1600</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="71" data-name="Pasta Combo Deal" data-price="1100">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pasta Combo Deal">
+                        <div class="item-info">
+                            <h3>Pasta Combo Deal</h3>
+                            <p>1 Cream Pasta + 1 Zinger Burger + 1 Reg. Fries + 1L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 1100</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="72" data-name="Family Feast Deal" data-price="2500">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Family Feast Deal">
+                        <div class="item-info">
+                            <h3>Family Feast Deal</h3>
+                            <p>1 Large Pizza + 3 Hot Wings + 5 Nuggets + 2 Zinger Burger + 1.5L Coke</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 2500</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold Coffee -->
+            <div class="menu-category">
+                <h2>Cold Coffee</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="73" data-name="Americano" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Americano">
+                        <div class="item-info">
+                            <h3>Americano</h3>
+                            <p>Classic americano coffee</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="74" data-name="Crazy Lot-KAT" data-price="320">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Crazy Lot-KAT">
+                        <div class="item-info">
+                            <h3>Crazy Lot-KAT</h3>
+                            <p>KitKat flavored cold coffee</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 320</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="75" data-name="Cookies & Cream" data-price="320">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cookies & Cream">
+                        <div class="item-info">
+                            <h3>Cookies & Cream</h3>
+                            <p>Cookies and cream flavored coffee</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 320</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="76" data-name="Caramel Craves" data-price="320">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Caramel Craves">
+                        <div class="item-info">
+                            <h3>Caramel Craves</h3>
+                            <p>Rich caramel flavored cold coffee</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 320</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream Flavors -->
+            <div class="menu-category">
+                <h2>Ice Cream Flavors</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="77" data-name="Vanilla Ice Cream" data-price="120">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Vanilla Ice Cream">
+                        <div class="item-info">
+                            <h3>Vanilla Ice Cream</h3>
+                            <p>Classic vanilla ice cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 120/180</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="78" data-name="Chocolate Chip" data-price="120">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chocolate Chip">
+                        <div class="item-info">
+                            <h3>Chocolate Chip</h3>
+                            <p>Chocolate chip ice cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 120/180</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="79" data-name="Mango Ice Cream" data-price="120">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Mango Ice Cream">
+                        <div class="item-info">
+                            <h3>Mango Ice Cream</h3>
+                            <p>Fresh mango flavored ice cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 120/180</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="80" data-name="Strawberry Ice Cream" data-price="120">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Strawberry Ice Cream">
+                        <div class="item-info">
+                            <h3>Strawberry Ice Cream</h3>
+                            <p>Sweet strawberry ice cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 120/180</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="81" data-name="Caramel Crunch" data-price="140">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Caramel Crunch">
+                        <div class="item-info">
+                            <h3>Caramel Crunch</h3>
+                            <p>Caramel ice cream with crunchy bits</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 140/210</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="82" data-name="Kulfa Ice Cream" data-price="140">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Kulfa Ice Cream">
+                        <div class="item-info">
+                            <h3>Kulfa Ice Cream</h3>
+                            <p>Traditional kulfi flavored ice cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 140/210</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="83" data-name="Pista Ice Cream" data-price="140">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pista Ice Cream">
+                        <div class="item-info">
+                            <h3>Pista Ice Cream</h3>
+                            <p>Rich pistachio flavored ice cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 140/210</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ice Cream Shakes -->
+            <div class="menu-category">
+                <h2>Ice Cream Shakes</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="84" data-name="Vanilla Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Vanilla Shake">
+                        <div class="item-info">
+                            <h3>Vanilla Shake</h3>
+                            <p>Creamy vanilla milkshake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="85" data-name="Chocolate Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Chocolate Shake">
+                        <div class="item-info">
+                            <h3>Chocolate Shake</h3>
+                            <p>Rich chocolate milkshake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="86" data-name="Mango Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Mango Shake">
+                        <div class="item-info">
+                            <h3>Mango Shake</h3>
+                            <p>Fresh mango milkshake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="87" data-name="Strawberry Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Strawberry Shake">
+                        <div class="item-info">
+                            <h3>Strawberry Shake</h3>
+                            <p>Sweet strawberry milkshake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="88" data-name="Caramel Crunch Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Caramel Crunch Shake">
+                        <div class="item-info">
+                            <h3>Caramel Crunch Shake</h3>
+                            <p>Caramel shake with crunchy bits</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="89" data-name="Kulfa Shake" data-price="290">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Kulfa Shake">
+                        <div class="item-info">
+                            <h3>Kulfa Shake</h3>
+                            <p>Traditional kulfi flavored shake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 290</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="90" data-name="Pista Shake" data-price="290">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Pista Shake">
+                        <div class="item-info">
+                            <h3>Pista Shake</h3>
+                            <p>Rich pistachio flavored shake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 290</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Margaritas -->
+            <div class="menu-category">
+                <h2>Margaritas</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="91" data-name="Lemonade" data-price="150">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Lemonade">
+                        <div class="item-info">
+                            <h3>Lemonade</h3>
+                            <p>Fresh squeezed lemonade</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 150</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="92" data-name="Blue Berry Margarita" data-price="200">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Blue Berry Margarita">
+                        <div class="item-info">
+                            <h3>Blue Berry Margarita</h3>
+                            <p>Refreshing blueberry margarita</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 200</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="93" data-name="Strawberry Margarita" data-price="200">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Strawberry Margarita">
+                        <div class="item-info">
+                            <h3>Strawberry Margarita</h3>
+                            <p>Sweet strawberry margarita</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 200</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="94" data-name="Mint Margarita" data-price="200">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Mint Margarita">
+                        <div class="item-info">
+                            <h3>Mint Margarita</h3>
+                            <p>Refreshing mint margarita</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 200</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="95" data-name="Fresh Lime" data-price="150">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Fresh Lime">
+                        <div class="item-info">
+                            <h3>Fresh Lime</h3>
+                            <p>Fresh lime juice drink</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 150</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yum's Shakes -->
+            <div class="menu-category">
+                <h2>Yum's Shakes</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="96" data-name="Nutella Fantasy" data-price="320">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Nutella Fantasy">
+                        <div class="item-info">
+                            <h3>Nutella Fantasy</h3>
+                            <p>Rich Nutella shake with whipped cream</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 320</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="97" data-name="Kit N Bite Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Kit N Bite Shake">
+                        <div class="item-info">
+                            <h3>Kit N Bite Shake</h3>
+                            <p>KitKat flavored shake with chocolate chunks</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="98" data-name="Cookies Shake" data-price="270">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cookies Shake">
+                        <div class="item-info">
+                            <h3>Cookies Shake</h3>
+                            <p>Cookies and cream flavored shake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 270</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="99" data-name="Choco Fantasy" data-price="315">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Choco Fantasy">
+                        <div class="item-info">
+                            <h3>Choco Fantasy</h3>
+                            <p>Ultimate chocolate fantasy shake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 315</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="100" data-name="Oreo Lover Shake" data-price="315">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Oreo Lover Shake">
+                        <div class="item-info">
+                            <h3>Oreo Lover Shake</h3>
+                            <p>Oreo cookies blended shake</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 315</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tea & Coffee -->
+            <div class="menu-category">
+                <h2>Tea & Coffee</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="101" data-name="Nescafe Tea" data-price="120">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Nescafe Tea">
+                        <div class="item-info">
+                            <h3>Nescafe Tea</h3>
+                            <p>Classic Nescafe tea</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 120</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="102" data-name="Cappucino" data-price="275">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Cappucino">
+                        <div class="item-info">
+                            <h3>Cappucino</h3>
+                            <p>Rich and creamy cappuccino</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 275</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="103" data-name="Creamy Coffee" data-price="275">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Creamy Coffee">
+                        <div class="item-info">
+                            <h3>Creamy Coffee</h3>
+                            <p>Smooth and creamy coffee</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 275</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="104" data-name="Hot Chocolate" data-price="250">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Hot Chocolate">
+                        <div class="item-info">
+                            <h3>Hot Chocolate</h3>
+                            <p>Rich hot chocolate drink</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 250</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Russian Salad -->
+            <div class="menu-category">
+                <h2>Russian Salad</h2>
+                <div class="items-grid">
+                    <div class="menu-item" data-id="105" data-name="Russian Salad 1L" data-price="600">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Russian Salad 1L">
+                        <div class="item-info">
+                            <h3>Russian Salad 1L</h3>
+                            <p>Fresh Russian salad, 1 liter portion</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 600</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="106" data-name="Russian Salad ½L" data-price="300">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Russian Salad ½L">
+                        <div class="item-info">
+                            <h3>Russian Salad ½L</h3>
+                            <p>Fresh Russian salad, half liter portion</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 300</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item" data-id="107" data-name="Russian Salad 1 Cup" data-price="150">
+                        <img src="/placeholder.svg?height=200&width=300" alt="Russian Salad 1 Cup">
+                        <div class="item-info">
+                            <h3>Russian Salad 1 Cup</h3>
+                            <p>Fresh Russian salad, single cup portion</p>
+                            <div class="item-footer">
+                                <span class="price">Rs. 150</span>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     Cart Sidebar 
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button id="close-cart" class="close-cart">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total: Rs. <span id="cart-total">0</span></strong>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
