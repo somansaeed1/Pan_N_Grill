@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pan N Grill</title>
+    <meta name="description" content="Experience authentic Pakistani cuisine at The Pan N Grill in Jhang. Fresh pizzas, shawarmas, burgers, and traditional dishes. Order online or visit us at Adhiwal Chowk.">
+    
+    <meta property="og:title" content="The Pan N Grill - Authentic Pakistani Taste">
+    <meta property="og:description" content="Experience authentic Pakistani cuisine at The Pan N Grill in Jhang. Fresh pizzas, shawarmas, burgers, and traditional dishes.">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+    <meta property="og:url" content="https://thepanngrill.com">
+    <meta property="og:type" content="website">
+    
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { 50: '#fef2f2', 100: '#fee2e2', 200: '#fecaca', 300: '#fca5a5', 400: '#f87171', 500: '#ef4444', 600: '#dc2626', 700: '#b91c1c', 800: '#991b1b', 900: '#7f1d1d' },
+                        secondary: { 50: '#f0fdf4', 100: '#dcfce7', 200: '#bbf7d0', 300: '#86efac', 400: '#4ade80', 500: '#22c55e', 600: '#16a34a', 700: '#15803d', 800: '#166534', 900: '#14532d' },
+                        gold: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                    },
+                    fontFamily: { 'script': ['Dancing Script', 'cursive'], 'heading': ['Playfair Display', 'serif'], 'body': ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body bg-white text-gray-800 smooth-scroll">
+    
+    <div id="loading-spinner" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+        <div class="text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-b-2 border-gold-500 mx-auto mb-4"></div>
+            <p class="text-primary-900 font-semibold">Loading The Pan N Grill...</p>
+        </div>
+    </div>
+    
+    <div id="toast-container" class="fixed top-4 right-4 z-50"></div>
+    
+    <div id="app"></div>
+    
+    <script type="text/babel" src="data/menuData.js"></script>
+    <script type="text/babel" src="components/ErrorBoundary.js"></script>
+    <script type="text/babel" src="context/CartContext.js"></script>
+    <script type="text/babel" src="components/Navbar.js"></script>
+    <script type="text/babel" src="components/HomePage.js"></script>
+    <script type="text/babel" src="components/AboutPage.js"></script>
+    <script type="text/babel" src="components/MenuPage.js"></script>
+    <script type="text/babel" src="components/ContactPage.js"></script>
+    <script type="text/babel" src="components/GalleryPage.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/CartDrawer.js"></script>
+    <script type="text/babel" src="components/App.js"></script>
+    
+    <script type="text/babel" src="script.js"></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": "The Pan N Grill",
+        "description": "Authentic Pakistani cuisine restaurant in Jhang, Pakistan. Serving traditional pizzas, shawarmas, burgers, and Pakistani dishes.",
+        "url": "https://thepanngrill.com",
+        "telephone": "+92-318-1717763",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Adhiwal Chowk, Sargodha Road",
+            "addressLocality": "Jhang Sadar",
+            "addressRegion": "Jhang",
+            "addressCountry": "Pakistan"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "31.2681",
+            "longitude": "72.3317"
+        },
+        "openingHours": "Mo-Su 11:00-23:00",
+        "servesCuisine": "Pakistani",
+        "priceRange": "$$",
+        "acceptsReservations": true,
+        "hasDeliveryService": true,
+        "paymentAccepted": "Cash",
+        "currenciesAccepted": "PKR"
+    }
+    </script>
+</body>
+</html>
